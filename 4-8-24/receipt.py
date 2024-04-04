@@ -7,7 +7,7 @@ amount = float(amount)
 tax = amount * 0.10
 total = amount + tax
 
-print("Hello", name, "here is your sales receipt:")
+print("Hello", name + ",", "here is your sales receipt:")
 print("Subtotal = $", format(amount, ',.2f').rjust(8, ' '))
 print("     Tax = $", format(tax, ',.2f').rjust(8, ' '))
 print("             --------")
