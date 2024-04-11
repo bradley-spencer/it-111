@@ -1,0 +1,43 @@
+#Create
+
+filename = "myfile.txt"
+
+try:
+    f = open(filename, "x")
+    f.close()
+except:
+    print("Error creating file:", filename)
+
+
+#Write
+
+filename = "myfile.txt"
+
+f = open(filename, "w")
+f.write("Hello, this is my file, no one else's :)\n")
+
+
+#Append
+
+filename = "myfile.txt"
+
+f = open(filename, "a")
+f.write("Here's some more text\n")
+
+
+#Delete
+
+import os
+
+filename = "myfile.txt"
+
+print("You are about to remove the file: ", filename)
+answer = input("Are you sure you want to do this? y/n: ")
+
+if answer == "y":
+    os.remove(filename)
+    print("File deleted")
+else:
+    print("Ok, I did not delete the file")
+
+f.close()
