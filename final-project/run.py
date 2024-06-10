@@ -246,9 +246,6 @@ def make_choice(wd, choice):
 
 
 def main():
-    # Make sure that any files passed into CurrDir functions are ABSOLUTE paths!
-    # Check for relative paths (no leading /, leading ./ or ../) before passing in
-    # also check for windows relpath (not starting with C:\ or other drive letter)
     curr_dir = CurrDir('.')
     going = True
     while going:
